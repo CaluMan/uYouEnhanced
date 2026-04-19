@@ -137,6 +137,12 @@ jobs:
           THEOS: ${{ github.workspace }}/theos
           YOUTUBE_URL: ${{ env.URL_YT }}
 
+      - name: Checkout YTUHD fix commit
+        run: |
+          cd ${{ github.workspace }}/main/Tweaks/YTUHD
+          git fetch origin
+          git checkout 12f69d294c36d4a915ad8b0e52eb5bd744ea5672
+          
       - name: Fix compiling & Build Package
         id: build_package
         run: |
