@@ -141,7 +141,7 @@ jobs:
         run: |
           cd ${{ github.workspace }}/main/Tweaks/YTUHD
           git fetch --unshallow origin
-          git checkout 12f69d294c36d4a915ad8b0e52eb5bd744ea5672
+          git checkout 28da1b91b7fdc62d5e486e4fa568f297ad606704
           
       - name: Fix compiling & Build Package
         id: build_package
