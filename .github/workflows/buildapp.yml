@@ -142,6 +142,12 @@ jobs:
           cd ${{ github.workspace }}/main/Tweaks/YTUHD
           git fetch --unshallow origin
           git checkout 28da1b91b7fdc62d5e486e4fa568f297ad606704
+
+      - name: Checkout YouPiP fix commit
+        run: |
+          cd ${{ github.workspace }}/main/Tweaks/YouPiP
+          git fetch --unshallow origin
+          git checkout ac617f219b4c1be448f5503899a3a24719b89b67
           
       - name: Fix compiling & Build Package
         id: build_package
